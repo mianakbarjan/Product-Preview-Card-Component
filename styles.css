@@ -100,7 +100,7 @@ body
     left: 15px;
 }
 
-@media (max-width: 380px)
+@media screen and (max-width: 380px)
 {
     .container-fluid
     {
@@ -127,5 +127,31 @@ body
         font-size: 2rem;
     }
 }
+@media screen and (max-width: 980px)
+{
+    .container-fluid
+    {
+        
+    }
+    .image
+    {
+        border-radius: 3% 3% 0 0;
+    }
+    .card
+    {
+        height: 90%;
+        left: 35%;
+        bottom: 95%;
+        padding-bottom: 100px;
+        border-radius: 0 0 3% 3%;
+    }
+    .card .price
+    {
+        font-size: 1.65rem;
+    }
+
+}
+
+
 
 
