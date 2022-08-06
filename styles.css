@@ -1,0 +1,131 @@
+:root
+{
+    --primary-dark: hsl(158, 36%, 37%);
+    --primary-light: hsl(30, 38%, 92%);
+
+    --secondary-dark: hsl(212, 21%, 14%);
+    --secondary-semi-dark: hsl(228, 12%, 48%);
+    --secondary-light: hsl(0, 0%, 100%);
+
+    --font-heading: 'Fraunces', serif;
+    --font-secondary: 'Montserrat', sans-serif;
+}
+body
+{
+    background-color: var(--primary-light);
+}
+.image
+{
+   position: relative;
+   left: 35%;
+   height: 50%;
+   border-radius: 2% 0 0 2%;
+}
+.container-fluid
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 50%;
+}
+.card
+{
+    height: 450px;
+    width: 300px;
+    right: 3.7%;
+    border-radius: 0 2% 2% 0;
+    padding: 7%;
+}
+
+.top
+{
+    font-family: var(--font-secondary);
+    color: var(--secondary-semi-dark);
+    font-size: 1rem;
+    letter-spacing: 5px;
+    padding-bottom: 1px;
+}
+.heading
+{
+    font-family: var(--font-heading);
+    font-size: 2rem;
+    margin-right: 3px;
+    line-height: 1;
+    font-weight: 700;
+}
+.statement
+{
+    font-family: var(--font-secondary);
+    color: var(--secondary-semi-dark);
+    line-height: 1.75;
+    font-size: 0.9rem;
+    font-weight: 500;
+    margin-right: 4px;
+}
+.cart
+{
+    background-color: var(--primary-dark);
+    color: var(--secondary-light);
+    letter-spacing: 0.5px;
+    font-family: var(--font-secondary);
+    font-weight: 500;
+    font-size: 0.85rem;
+}
+.btn
+{
+    padding: 10px 0;
+}
+.pricing
+{
+    margin-bottom: 4px;
+}
+.card .price
+{
+    display: inline-block;
+    width: 50%;
+    font-family: var(--font-heading);
+    color: var(--primary-dark);
+    font-size: 1.75rem;
+}
+.cut-price
+{
+    display: inline-block;
+    width: 40%;
+    font-family: var(--font-secondary);
+    color: var(--secondary-semi-dark);
+    text-decoration: line-through;
+    position: relative;
+    bottom: 4px;
+    left: 15px;
+}
+
+@media (max-width: 380px)
+{
+    .container-fluid
+    {
+        right: 33%;
+        
+        position: absolute;
+    }
+    .image{
+        position: relative;
+        border-radius: 3% 3% 0 0;
+        width: 100%;
+        height: 80%;
+      
+    }
+    .card{
+        position: relative;
+        left: 35%;
+        width: 100%;
+        bottom: 45%;
+        border-radius: 0 0 3% 3%;
+    }
+    .card .price
+    {
+        font-size: 2rem;
+    }
+}
+
+
